@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Office Cleaning</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Poppins;
+background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* Header */
+.header{
+text-align:center;
+padding:40px;
+font-size:44px;
+letter-spacing:2px;
+text-shadow:0 0 20px cyan;
+}
+
+/* Sections */
+.section{
+display:flex;
+align-items:center;
+gap:50px;
+padding:50px 8%;
+}
+
+.section:nth-child(even){
+flex-direction:row-reverse;
+}
+
+.section img{
+width:420px;
+height:280px;
+object-fit:cover;
+border-radius:18px;
+box-shadow:0 0 25px rgba(0,255,255,.35);
+transition:.4s;
+}
+
+.section img:hover{
+transform:scale(1.05);
+}
+
+.text h2{
+color:cyan;
+font-size:28px;
+}
+
+.text p{
+opacity:.85;
+line-height:1.6;
+}
+
+/* Pricing */
+.pricing{
+text-align:center;
+padding:50px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:25px;
+width:260px;
+border-radius:18px;
+border:1px solid cyan;
+transition:.4s;
+}
+
+.card:hover{
+transform:scale(1.1);
+box-shadow:0 0 30px cyan;
+}
+
+button{
+padding:12px 25px;
+border:none;
+background:cyan;
+border-radius:25px;
+cursor:pointer;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">Corporate Office Cleaning</div>
+
+<!-- Workspace -->
+<div class="section">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+<div class="text">
+<h2>Workspace & Desk Cleaning</h2>
+<p>We disinfect desks, keyboards, and chairs to maintain a hygienic environment and improve employee productivity.</p>
+</div>
+</div>
+
+<!-- Floor -->
+<div class="section">
+<img src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f">
+<div class="text">
+<h2>Floor & Carpet Cleaning</h2>
+<p>Advanced vacuuming and mopping remove dust, stains, and allergens, keeping office floors polished and safe.</p>
+</div>
+</div>
+
+<!-- Washroom -->
+<div class="section">
+<img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50">
+<div class="text">
+<h2>Washroom Deep Cleaning</h2>
+<p>Complete restroom sanitization including tiles, mirrors, and odor removal for a fresh hygienic experience.</p>
+</div>
+</div>
+
+<!-- Glass -->
+<div class="section">
+<img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac">
+<div class="text">
+<h2>Glass & Cabin Cleaning</h2>
+<p>Crystal-clear windows and partitions enhance lighting, aesthetics, and overall workplace professionalism.</p>
+</div>
+</div>
+
+<!-- Pricing -->
+<div class="pricing">
+<h1>Pricing Plans</h1>
+
+<div class="cards">
+<div class="card">
+<h2>Basic</h2>
+<p>₹1499</p>
+<button>Book Now</button>
+</div>
+
+<div class="card">
+<h2>Standard</h2>
+<p>₹2499</p>
+<button>Book Now</button>
+</div>
+
+<div class="card">
+<h2>Premium</h2>
+<p>₹3999</p>
+<button>Book Now</button>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+

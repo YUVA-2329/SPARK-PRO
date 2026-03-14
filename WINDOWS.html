@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<head><style>/* ⭐ Dark gradient background */
+body{
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:white;
+  overflow-x:hidden;
+}
+
+/* ⭐ Container fade animation */
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+  text-align:center;
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.subtitle{
+  color:#bbb;
+}
+
+/* ⭐ Neon glass cards */
+.price-card,
+.guide,
+.review{
+  background: rgba(259,260,257,0.05);
+  backdrop-filter: blur(10px);
+  border-radius:15px;
+  padding:20px;
+  margin:20px 0;
+  box-shadow:0 0 20px rgba(0,255,255,0.15);
+  transition:0.35s;
+}
+
+.price-card:hover,
+.guide:hover,
+.review:hover{
+  transform: translateY(-5px) scale(1.02);
+  box-shadow:0 0 25px cyan;
+}
+
+/* ⭐ Gallery neon zoom */
+.gallery{
+  display:flex;
+  gap:15px;
+  margin:30px 0;
+  justify-content:center;
+}
+
+.gallery img{
+  width:30%;
+  border-radius:12px;
+  transition:0.4s;
+  filter: brightness(0.85);
+}
+
+.gallery img:hover{
+  transform:scale(1.1);
+  filter: brightness(1);
+  box-shadow:0 0 25px cyan;
+}
+
+/* ⭐ Animated glowing button */
+button{
+  margin-top:25px;
+  padding:13px 30px;
+  border:none;
+  border-radius:30px;
+  background: linear-gradient(135deg,#00f2fe,#4facfe);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.35s;
+}
+
+button:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px cyan, 0 0 40px #00f2fe;
+}
+
+/* ⭐ Floating slow glow */
+h1{
+  text-shadow:0 0 10px cyan;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0 0 10px cyan;}
+  to{text-shadow:0 0 25px #00f2fe;}
+}
+/* ⭐ Pricing section */
+.pricing-section{
+  margin-top:40px;
+}
+
+/* ⭐ Title glow */
+.price-title{
+  font-size:28px;
+  margin-bottom:20px;
+  text-shadow:0 0 15px cyan;
+}
+
+/* ⭐ Grid layout */
+.price-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+/* ⭐ Price card */
+.price-box{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(12px);
+  padding:25px;
+  border-radius:18px;
+  transition:0.35s;
+  border:1px solid rgba(0,255,255,0.2);
+  cursor:pointer;
+}
+
+.price-box:hover{
+  transform:translateY(-8px) scale(1.05);
+  box-shadow:0 0 25px cyan;
+}
+
+/* ⭐ Price text */
+.price{
+  font-size:32px;
+  font-weight:700;
+  color:#00f2fe;
+  margin:10px 0;
+  text-shadow:0 0 12px cyan;
+}
+
+/* ⭐ Small text */
+.price-box span{
+  color:#bbb;
+  font-size:14px;
+}
+
+/* ⭐ Popular card highlight */
+.popular{
+  background:linear-gradient(135deg,#00f2fe,#4facfe);
+  color:white;
+  transform:scale(1.05);
+}
+
+.popular .price{
+  color:white;
+  text-shadow:0 0 10px white;
+}
+/* ⭐ Pricing section */
+.pricing-section{
+  margin-top:40px;
+}
+
+/* ⭐ Title glow */
+.price-title{
+  font-size:28px;
+  margin-bottom:20px;
+  text-shadow:0 0 15px cyan;
+}
+
+/* ⭐ Grid layout */
+.price-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+/* ⭐ Price card */
+.price-box{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(12px);
+  padding:25px;
+  border-radius:18px;
+  transition:0.35s;
+  border:1px solid rgba(0,255,255,0.2);
+  cursor:pointer;
+}
+
+.price-box:hover{
+  transform:translateY(-8px) scale(1.05);
+  box-shadow:0 0 25px cyan;
+}
+
+/* ⭐ Price text */
+.price{
+  font-size:32px;
+  font-weight:700;
+  color:#00f2fe;
+  margin:10px 0;
+  text-shadow:0 0 12px cyan;
+}
+
+/* ⭐ Small text */
+.price-box span{
+  color:#bbb;
+  font-size:14px;
+}
+
+/* ⭐ Popular card highlight */
+.popular{
+  background:linear-gradient(135deg,#00f2fe,#4facfe);
+  color:white;
+  transform:scale(1.05);
+}
+
+.popular .price{
+  color:white;
+  text-shadow:0 0 10px white;
+}</style></head>
+ 
+<body>
+<div class="container">
+
+  <h1>🪟 Window Cleaning Service</h1>
+  <p class="subtitle">Crystal clear windows for a brighter and healthier space</p>
+
+  <!-- ⭐ Photo section -->
+  <div class="gallery">
+  
+    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+    
+    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+    
+    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a">
+
+  </div>
+
+  <!-- ⭐ Price section -->
+ <div class="pricing-section">
+
+  <h2 class="price-title">💎 Premium Pricing</h2>
+
+  <div class="price-grid">
+
+    <div class="price-box">
+      <h3>Single Window</h3>
+      <p class="price">₹199</p>
+      <span>Inside & outside cleaning</span>
+    </div>
+
+    <div class="price-box popular">
+      <h3>Apartment Package</h3>
+      <p class="price">₹999</p>
+      <span>Up to 8 windows ⭐</span>
+    </div>
+
+    <div class="price-box">
+      <h3>Villa / Duplex</h3>
+      <p class="price">₹1999</p>
+      <span>Full property window wash</span>
+    </div>
+
+    <div class="price-box">
+      <h3>Glass Facade</h3>
+      <p class="price">₹2999</p>
+      <span>Commercial buildings</span>
+    </div>
+
+  </div>
+
+</div>
+
+  <!-- ⭐ Guidance -->
+  <div class="guide">
+    <h2>📋 Service Guidance</h2>
+    <p>
+      Our professionals use streak-free solutions and microfiber tools to ensure spotless glass.
+      We clean window frames, tracks, and remove hard water stains.
+      Service duration depends on number and size of windows.
+    </p>
+     <ul>
+    <li>✔ Ensure easy access to windows before service begins.</li>
+    <li>✔ Remove curtains or blinds in advance if possible.</li>
+    <li>✔ Water and electricity should be available.</li>
+    <li>✔ High-rise cleaning done with safety equipment.</li>
+    <li>✔ Final inspection done after completion.</li>
+  </ul>
+  </div>
+
+  <!-- ⭐ Reviews -->
+  <div class="reviews">
+    <h2>⭐ Customer Reviews</h2>
+
+    <div class="review">
+      <h4>Rahul ⭐⭐⭐⭐⭐</h4>
+      <p>My windows look brand new. No streaks at all!</p>
+    </div>
+
+    <div class="review">
+      <h4>Anjali ⭐⭐⭐⭐</h4>
+      <p>Very professional team. They cleaned every corner.</p>
+    </div>
+
+    <div class="review">
+      <h4>Kiran ⭐⭐⭐⭐⭐</h4>
+      <p>Glass facade cleaning was excellent. Highly recommended.</p>
+    </div>
+  </div>
+
+  <button onclick="location.href='index.html'">⬅ Back</button>
+
+</div>
+
+  
+
+  
+
+  
+
+    
+
+</body>
+</html>
